@@ -1,8 +1,9 @@
 <br/>
-# I want to Sanlio’s characters keyring!
+
+# 🤡 I want to Sanlio’s characters keyring!
 <br/>
 <aside>
-🤡 산리오 캐릭터 키링 뽑기를 마음껏 하고 싶은 백수(=나..)가 만드는 가챠 미니 게임ㅠㅠ
+산리오 캐릭터 키링 뽑기를 마음껏 하고 싶은 백수(=나..)가 만드는 가챠 미니 게임ㅠㅠ
 </aside>
 <br/>
 <br/>
