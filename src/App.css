@@ -1,7 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
 .App {
   text-align: center;
+  font-family: 'Gaegu';
 }
