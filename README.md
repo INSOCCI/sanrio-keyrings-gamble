@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# I want to Sanlio’s characters keyring!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<aside>
+🤡 산리오 캐릭터 키링 뽑기를 마음껏 하고 싶은 백수(=나..)가 만드는 가챠 미니 게임ㅠㅠ
+</aside>
 
-## Available Scripts
+# 🎲 설명
 
-In the project directory, you can run:
+> **▪️백수라도 세상에 공짜는 없다 !**
+   아무런 댓가없이 무한정 뽑기만 한다면 흥미가 금방 떨어질 것.
+   따라서 빼빼로 한 갑(Ea8)을 만들면 노동의 댓가로 뽑기 기회 1번이 주어짐.
 
-### `yarn start`
+**▪️빼빼로 만들기가 세상에서 제일 쉬웠어요…**
+   빼빼로 1개를 만드려면 3단계로 구성된 아주 간단한 미니 게임을 통과해야 함.
+    ex) 마치 오락실 가면 있는 [더★비시바시](http://bishibashi.uniana.com/main.php?mid=game02) 같은 너낌쓰?
+   실패할 시, 해당 빼빼로 과자는 폐기되고 1단계부터 다시 시작.
+  
+**▪️그래도 역시나 쿠로미를 뽑기란 어려울껄ㅎㅋ**
+   각 캐릭터별로 가챠 확률이 매번 랜덤하게 주어져서 설계한 나 조차도 예상 X
+   이렇게 뽑힌 캐릭터 키링들은 My 보관함에서 확인 가능.
+> 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# ⛳ 미니게임 Roles
 
-### `yarn test`
+> ▪️ **1단계 - 은밀한 초콜렛의 중탕**
+  초콜렛을 중탕하기 최적의 온도는 평균 45도 정도!
+  초콜렛이 굳지 않게 20초 안에 마우스 클릭 횟수를 딱 45번 해서 온도계의 온도를 맞추면 성공.**▪️ 2단계 - 깐깐한 막대 과자 손님**
+  위에서 떨어지는 막대 과자에 표시된 지점까지 초콜렛이 입혀지는 순간 마우스 클릭하면 성공.
+**▪️ 3단계 - 빼빼로를 굴려라!**
+   화면에 보이는 방향키에 맞게 키보드 방향키를 5초 안에 눌러 빼빼로를 끝까지 굴리면 성공.
+> 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+# ⚙️ 설계 및 디자인
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+디렉토리 구조 시각화 이미지 (진행중…)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://www.figma.com/file/CfaAcLlow7WUaVyA9BiJCY/thon-I's-team-library?node-id=511%3A2&t=BS40wsaSbd0fzkHE-1‣ (진행중…)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+# ⚒️ 사용 기술
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Javascript, React, React-Qeary
+- Firebase
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 💭 트러블슈팅
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
