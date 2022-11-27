@@ -1,8 +1,10 @@
+<br/>
 # I want to Sanlio’s characters keyring!
-
+<br/>
 <aside>
 🤡 산리오 캐릭터 키링 뽑기를 마음껏 하고 싶은 백수(=나..)가 만드는 가챠 미니 게임ㅠㅠ
 </aside>
+<br/>
 <br/>
 <br/>
 
@@ -21,7 +23,6 @@
 > 각 캐릭터별로 가챠 확률이 매번 랜덤하게 주어져서 설계한 나 조차도 예상 X<br/>
 > 이렇게 뽑힌 캐릭터 키링들은 My 보관함에서 확인 가능.<br/>
 <br/>
-<br/>
 
 # ⛳ 미니게임 Roles
 
@@ -32,21 +33,18 @@
 > 위에서 떨어지는 막대 과자에 표시된 지점까지 초콜렛이 입혀지는 순간 마우스 클릭하면 성공. <br/>
 > ▪️ **3단계 - 빼빼로를 굴려라!** <br/>
 > 화면에 보이는 방향키에 맞게 키보드 방향키를 5초 안에 눌러 빼빼로를 끝까지 굴리면 성공. <br/>
-> <br/>
-> <br/>
+<br/>
 
 # ⚙️ 설계 및 디자인
 
 디렉토리 구조 시각화 이미지 (진행중…) <br/>
 [Figma작업](https://www.figma.com/file/CfaAcLlow7WUaVyA9BiJCY/thon-I's-team-library?node-id=511%3A2&t=BS40wsaSbd0fzkHE-1‣) (진행중…)<br/>
 <br/>
-<br/>
 
 # ⚒️ 사용 기술
 
 - Javascript, React, React-Qeary
 - Firebase
-  <br/>
-  <br/>
+<br/>
 
 # 💭 트러블슈팅
