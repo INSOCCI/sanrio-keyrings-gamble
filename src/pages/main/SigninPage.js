@@ -1,7 +1,9 @@
 import React from "react";
+import { SignInModal } from "../../components/ui/modals/AccountModals";
+import ModalEffect from "../../components/ui/modals/ModalEffect";
 
 const SignInPage = () => {
-  return <div>SigninPage</div>;
+  return <SignInModal></SignInModal>;
 };
 
 export default SignInPage;
