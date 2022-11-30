@@ -47,7 +47,7 @@
 
 # ⚒️ 사용 기술
 
-- Javascript, React, React-Qeary
+- Javascript, React, React-Qeary, Re
 - Firebase
 <br/>
 
