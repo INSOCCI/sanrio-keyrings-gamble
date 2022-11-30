@@ -1,7 +1,8 @@
 import React from "react";
+import { SignUpModal } from "../../components/ui/modals/AccountModals";
 
 const SignUpPage = () => {
-  return <div>SignupPage</div>;
+  return <SignUpModal></SignUpModal>;
 };
 
 export default SignUpPage;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import ModalEffect from "./ModalEffect";
 
@@ -8,54 +8,77 @@ import ModalEffect from "./ModalEffect";
  */
 // SignIn
 export const SignInModal = () => {
+  const navigate = useNavigate();
   return (
     <ModalEffect>
       <Form>
         <h2>로그인</h2>
         <InputSection>
-          <ValueName>
+          <InputValue>
             <small>ID</small>
-            <p>state 알림</p>
-          </ValueName>
+          </InputValue>
           <input placeholder="아이디를 입력해주세요." />
-          <ValueName>
-            <small>PW</small> <p>앙디</p>
-          </ValueName>
+
+          <InputValue>
+            <small>PW</small>
+          </InputValue>
 
           <input placeholder="비밀번호를 입력해주세요." type={"password"} />
         </InputSection>
 
         <BtnSection>
-          <Link to="/game">
-            <Button>확인</Button>
-          </Link>
-          <Button>회원가입</Button>
+          <Button
+            onClick={() => {
+              navigate("/game");
+            }}
+          >
+            확인
+          </Button>
+          <Button
+            onClick={() => {
+              navigate("/signup");
+            }}
+          >
+            회원가입
+          </Button>
         </BtnSection>
       </Form>
     </ModalEffect>
   );
 };
+
 // SignUp
 export const SignUpModal = () => {
+  const navigate = useNavigate();
   return (
     <ModalEffect>
       <Form>
         <h2>회원가입</h2>
         <InputSection>
-          <ValueName>
-            <p>ID</p> <small>중복된 아이디가 있습니다.</small>
-          </ValueName>
+          <InputValue>
+            <small>ID</small> <p>중복된 아이디가 있습니다.</p>
+          </InputValue>
           <input placeholder="아이디를 입력해주세요." />
 
-          <ValueName>
+          <InputValue>
             <small>PW</small>
-            <p>아이디를s</p>
-          </ValueName>
+            <p>6자리 이상 입력해주세요.</p>
+          </InputValue>
+          <input placeholder="비밀번호를 입력해주세요." type={"password"} />
+          <InputValue>
+            <small>PW</small>
+            <p>6자리 이상 입력해주세요.</p>
+          </InputValue>
           <input placeholder="비밀번호를 입력해주세요." type={"password"} />
         </InputSection>
         <BtnSection>
-          <Button>확인</Button>
-          <Button>회원가입</Button>
+          <Button
+            onClick={() => {
+              navigate("/signin");
+            }}
+          >
+            확인
+          </Button>
         </BtnSection>
       </Form>
     </ModalEffect>
@@ -68,14 +91,18 @@ export const SignUpModal = () => {
 // Input
 const Form = styled.form`
   width: 25rem;
-  height: 25rem;
+  height: 30rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
   justify-content: center;
   background-color: tan;
   font-size: 1.5rem;
+  h2 {
+    margin-bottom: 5%;
+  }
 `;
 const InputSection = styled.div`
   width: 80%;
@@ -94,14 +121,15 @@ const InputSection = styled.div`
     padding: 1%;
   }
 `;
-const ValueName = styled.div`
+const InputValue = styled.div`
   width: 80%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   font-weight: 800;
   p {
-    margin: 0px 5px;
-    font-size: 1rem;
+    margin-left: 3%;
+    font-size: 0.8rem;
   }
 `;
 
@@ -120,5 +148,8 @@ const Button = styled.button`
   border-radius: 5px;
   &:first-child {
     margin-right: 3%;
+  }
+  &:hover {
+    cursor: pointer;
   }
 `;

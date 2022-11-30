@@ -2,11 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { SignInBtn, SignUpBtn } from "../../components/ui/buttons/AccountBtn";
 import img1 from "../../images/main/main_img1.jpg";
-import { Routes, Route } from "react-router-dom";
-import SignInPage from "../main/SignInPage";
-import SignUpPage from "../main/SignUpPage";
-import WarmingUpPage from "../game/WarmingUpPage";
-import NotFoundPage from "../NotFoundPage";
 
 const MainPage = () => {
   return (
@@ -19,14 +14,6 @@ const MainPage = () => {
       />
       <SignInBtn />
       <SignUpBtn />
-
-      <Routes>
-        <Route index element={null} />
-        <Route path="signin" element={<SignInPage />} />
-        <Route path="signup" element={<SignUpPage />} />
-        <Route path="game" element={<WarmingUpPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
     </Wrap>
   );
 };
