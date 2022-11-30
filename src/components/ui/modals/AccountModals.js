@@ -28,6 +28,7 @@ export const SignInModal = () => {
 
         <BtnSection>
           <Button
+            type="submit"
             onClick={() => {
               navigate("/game");
             }}
@@ -35,6 +36,7 @@ export const SignInModal = () => {
             확인
           </Button>
           <Button
+            type="button"
             onClick={() => {
               navigate("/signup");
             }}
@@ -73,6 +75,7 @@ export const SignUpModal = () => {
         </InputSection>
         <BtnSection>
           <Button
+            type="submit"
             onClick={() => {
               navigate("/signin");
             }}
