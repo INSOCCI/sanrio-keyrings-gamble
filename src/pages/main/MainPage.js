@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { SignInBtn, SignUpBtn } from "../../components/ui/buttons/AccountBtn";
+import { SignInBtn, SignUpBtn } from "../../components/ui/buttons/MainBtn";
 import img1 from "../../images/main/main_img1.jpg";
 
 const MainPage = () => {
+  console.log('야 콘솔정신차려')
   return (
     <Wrap>
       <Title>Sanlio keyring gamble</Title>
