@@ -1,6 +1,7 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import { SignInBtn, SignUpBtn } from "../../components/ui/buttons/MainBtn";
+import { SignInBtn, GameBtn } from "../../components/ui/buttons/MainBtn";
 import img1 from "../../images/main/main_img1.jpg";
 
 const MainPage = () => {
@@ -13,7 +14,7 @@ const MainPage = () => {
         style={{ margin: "4rem" }}
       />
       <SignInBtn />
-      <SignUpBtn />
+      <GameBtn />
     </Wrap>
   );
 };

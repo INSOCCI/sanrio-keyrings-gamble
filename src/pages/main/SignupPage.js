@@ -37,49 +37,61 @@ function SignUpPage() {
   };
 
   return (
-    <Form>
-      <h2>회원가입</h2>
-      <InputSection>
-        <InputValue>
-          <small>Id</small>
-        </InputValue>
-        <input placeholder="이메일 형식으로 입력해주세요." ref={idRef} />
+    <Outside>
+      <Form>
+        <h2>회원가입</h2>
+        <InputSection>
+          <InputValue>
+            <small>Id</small>
+          </InputValue>
+          <input placeholder="이메일 형식으로 입력해주세요." ref={idRef} />
 
-        <InputValue>
-          <small>Name</small>
-        </InputValue>
-        <input placeholder="이름을 입력해주세요." ref={nameRef} />
+          <InputValue>
+            <small>Name</small>
+          </InputValue>
+          <input placeholder="이름을 입력해주세요." ref={nameRef} />
 
-        <InputValue>
-          <small>Password</small>
-        </InputValue>
-        <input
-          placeholder="6자리 이상 입력해주세요."
-          type={"password"}
-          ref={pwRef}
-          autoComplete="off"
-        />
+          <InputValue>
+            <small>Password</small>
+          </InputValue>
+          <input
+            placeholder="6자리 이상 입력해주세요."
+            type={"password"}
+            ref={pwRef}
+            autoComplete="off"
+          />
 
-        <InputValue>
-          <small>Confirm Password</small>
-        </InputValue>
-        <input
-          placeholder="비밀번호를 한번 더 입력해주세요."
-          type={"password"}
-          ref={confirmPwRef}
-          autoComplete="off"
-        />
-      </InputSection>
-      <BtnSection>
-        <Button onClick={signup} type="button">
-          회원가입
-        </Button>
-      </BtnSection>
-    </Form>
+          <InputValue>
+            <small>Confirm Password</small>
+          </InputValue>
+          <input
+            placeholder="비밀번호를 한번 더 입력해주세요."
+            type={"password"}
+            ref={confirmPwRef}
+            autoComplete="off"
+          />
+        </InputSection>
+        <BtnSection>
+          <Button onClick={signup} type="button">
+            회원가입
+          </Button>
+        </BtnSection>
+      </Form>
+    </Outside>
   );
 }
-
+const Outside = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+`;
 const Form = styled.form`
+  position: fixed;
+  top: 22.5%;
+  left: 37.5%;
   width: 25rem;
   height: fit-content;
   padding: 3% 2%;

@@ -16,3 +16,11 @@ export const SignUpBtn = () => {
     </BtnEffect>
   );
 };
+
+export const GameBtn = () => {
+  return (
+    <BtnEffect>
+      <Link to="/game">게임하기</Link>
+    </BtnEffect>
+  );
+};
