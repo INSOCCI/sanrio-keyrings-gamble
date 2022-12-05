@@ -7,7 +7,7 @@ import SignupPage from "./pages/main/SignupPage";
 import Step1Page from "./pages/game/Step1Page";
 import MyPage from "./pages/MyPage";
 import FailPage from "./pages/result/FailPage";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/ui/Navbar";
 
 function App() {
   return (

@@ -1,22 +1,25 @@
-import React from "react";
+import { React, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import useInterval from "../../hooks/useInterval";
 
 const Step1Page = () => {
   const navigate = useNavigate();
 
-  const [clickCounter, setClickCounter] = React.useState(0);
+  // 클릭횟수
+  const [clickCounter, setClickCounter] = useState(0);
 
   const increase = () => {
     setClickCounter(clickCounter + 1);
-    if (clickCounter > 45) {
-      alert("실패");
-    } else if (clickCounter === 44) {
-      alert("성공!");
-    } else {
-      return;
-    }
   };
+
+  // 시간초
+  const [count, setCount] = useState(6);
+  
+  useInterval(() => {
+    setCount(count - 1);
+  }, (!clickCounter || count ===0 ) ? null : 1000);
+
   return (
     <Wrap>
       <TitleBox>
@@ -28,9 +31,14 @@ const Step1Page = () => {
         <Thermometer>
           {/* 온도계 일러스트 */}
 
+          {/* 10초 타이머 설정 */}
+          <p> 남은 시간 : {count} 초</p>
+
           {/* 마우스 클릭 횟수 측정 */}
-          <h3>현재 {clickCounter}도</h3>
+          <h3>현재 {clickCounter} 도</h3>
           <button onClick={increase}> 온도 올리기! </button>
+
+
         </Thermometer>
       </PlayingBox>
     </Wrap>
