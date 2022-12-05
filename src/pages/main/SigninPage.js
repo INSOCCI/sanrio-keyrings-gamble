@@ -17,7 +17,7 @@ const SignInPage = () => {
       pwRef.current.value,
     );
     console.log(user);
-    navigate("/game");
+    navigate("/game/step1");
   };
 
   return (
