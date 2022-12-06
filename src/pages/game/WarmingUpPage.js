@@ -3,6 +3,7 @@ import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Step1Page from "../game/Step1Page";
 import Step2Page from "../game/Step2Page";
+import Step3Page from "../game/Step3Page";
 import MyPage from "../MyPage";
 import FailPage from "../result/FailPage";
 import Navbar from "../../components/ui/Navbar";
@@ -16,6 +17,7 @@ const WarmingUpPage = () => {
       <Routes>
         <Route path="/step1" element={<Step1Page />} />
         <Route path="/step2" element={<Step2Page />} />
+        <Route path="/step3" element={<Step3Page />} />
         <Route path="/:username" element={<MyPage />} />
         <Route path="/result" element={<FailPage />} />
       </Routes>

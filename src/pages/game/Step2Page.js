@@ -5,7 +5,8 @@ import useInterval from "../../hooks/useInterval";
 
 const Step2Page = () => {
   // Mission : 막대 과자가 위에서부터 조금씩 내려오는 애니메이션 효과 && 스페이스바 눌러서 멈출 수 있게 하기 
-   
+    // useInterval -> 시간초에 따라 y좌표값도 변하게? ,ㄴㄴ 그냥 animation keyframes로 시간초마다 포지션 설정주기?
+
   return (
     <Wrap>
       <TitleBox>
