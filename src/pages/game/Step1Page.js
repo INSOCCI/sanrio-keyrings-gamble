@@ -23,6 +23,10 @@ const Step1Page = () => {
     !clickCounter || count === 0 ? null : 1000,
   );
 
+  const reset = (e) => {
+    window.location.reload();
+  };
+
   return (
     <Wrap>
       <TitleBox>
@@ -48,22 +52,28 @@ const Step1Page = () => {
       </PlayingBox>
 
       {/* 실패 */}
+      {count === 0 && clickCounter !== 45 ? (
+        <ResultBtn onClick={reset}>
+          실패😭 <br />
+          다시하기!
+        </ResultBtn>
+      ) : null}
 
       {/* 성공  */}
       {count === 0 && clickCounter === 45 ? (
         <Link to="/game/step2">
-          <Next>
-            성공
+          <ResultBtn>
+            성공🎉
             <br />
             다음 단계로!
-          </Next>
+          </ResultBtn>
         </Link>
       ) : null}
     </Wrap>
   );
 };
 
-const Wrap = styled.div`
+export const Wrap = styled.div`
   width: 80%;
   height: fit-content;
   /* margin-top: 50px; */
@@ -75,7 +85,7 @@ const Wrap = styled.div`
   align-items: center;
   border: 2px red dotted;
 `;
-const TitleBox = styled.div`
+export const TitleBox = styled.div`
   width: 50%;
   margin: 10px 0;
   h2 {
@@ -83,7 +93,7 @@ const TitleBox = styled.div`
   }
 `;
 
-const PlayingBox = styled.div`
+export const PlayingBox = styled.div`
   width: 90%;
   height: 450px;
   padding: 3%;
@@ -108,12 +118,13 @@ const BtnOff = styled.button`
   cursor: not-allowed;
 `;
 
-const Next = styled.div`
-  width: 100px;
+const ResultBtn = styled.div`
+  width: 120px;
   height: fit-content;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 1px solid red;
+  border-radius: 5px;
+  background-color: hotpink;
   cursor: pointer;
 `;
 

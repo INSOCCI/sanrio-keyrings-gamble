@@ -8,14 +8,21 @@ const Navbar = () => {
       <Logo>
         <h2>keyring gamble</h2>
       </Logo>
+
       <Menus>
         <Menu>
-          <Link to={"/game/:username"}>
-            <li>MY</li>
-          </Link>
+          {/* 로과웃 - 아직 토큰 처리 안했음 */}
           <Link to={"/"}>
             <li>LOGOUT</li>
           </Link>
+
+          {/* 유저가 뽑은 키링들 모두 보여주는 곳 */}
+          <Link to={"/game/:username"}>
+            <li>MY</li>
+          </Link>
+
+          {/* 현재 만든 빼빼로 낱개 갯수 표시 */}
+          <li>🍟</li>
         </Menu>
       </Menus>
     </Wrap>

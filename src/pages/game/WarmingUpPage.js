@@ -12,6 +12,7 @@ const WarmingUpPage = () => {
   return (
     <>
       <Navbar />
+      {/* 게임 설명을 어떻게 넣을 지 고민 중 .. */}
       <Routes>
         <Route path="/step1" element={<Step1Page />} />
         <Route path="/step2" element={<Step2Page />} />
