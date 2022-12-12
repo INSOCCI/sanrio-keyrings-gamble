@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import styled from "styled-components";
 import {
   TopArrow,
@@ -7,17 +7,21 @@ import {
   RighttArrow,
 } from "../../components/ui/Arrow";
 import { Wrap, TitleBox } from "./Step1Page";
-import useInterval from "../../hooks/useInterval";
 
 const Step3Page = () => {
-  // 시간초
-  const [count, setCount] = useState(10);
-  useInterval(
-    () => {
-      setCount(count - 1);
-    },
-    count === 0 ? null : 1000,
-  );
+  // // 시간초
+  // const [count, setCount] = useState(10);
+  // useInterval(
+  //   () => {
+  //     setCount(count - 1);
+  //   },
+  //   count === 0 ? null : 1000,
+
+  // 키 인식
+  const keyUp = (e) => {
+    e.preventDefault();
+    console.log(e.keyCode); // 왼-37, 위-38, 오-39, 밑-40
+  };
 
   return (
     <Wrap>
@@ -25,12 +29,10 @@ const Step3Page = () => {
         <h2>[3단계] 데굴데굴 스트레칭</h2>
       </TitleBox>
 
-      {count}
-
+      {/* {count} */}
       <ArrowBox>
-        {" "}
         {/* 화살표 7개 - 랜덤으로 렌더링되게 */}
-        <TopArrow />
+
         <LeftArrow />
         <RighttArrow />
         <BottomArrow />
@@ -38,9 +40,11 @@ const Step3Page = () => {
         <BottomArrow />
         <BottomArrow />
       </ArrowBox>
-
       <DecorationBox>
-        <div>{/* 배경 - 데코레이션 가루, 이미지 - 빼빼로 */}</div>
+        <div>
+          {/* 배경 - 데코레이션 가루, 이미지 - 빼빼로 */}
+          <input onKeyUp={keyUp} autoFocus />
+        </div>
       </DecorationBox>
     </Wrap>
   );
